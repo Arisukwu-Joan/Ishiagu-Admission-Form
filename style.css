@@ -8,12 +8,12 @@ html {
 }
 
 p {
-    color: grey
+    color: #1C7C56
 }
 
 #heading {
     text-transform: uppercase;
-    color: #673AB7;
+    color: #1C7C56;
     font-weight: normal
 }
 
@@ -43,7 +43,7 @@ p {
 }
 
 #msform input,
-#msform textarea {
+#msform textarea, .form-select {
     padding: 8px 15px 8px 15px;
     border: 1px solid #ccc;
     border-radius: 0px;
@@ -51,9 +51,10 @@ p {
     margin-top: 2px;
     width: 100%;
     box-sizing: border-box;
-    font-family: montserrat;
+    font-family: sans-serif;
     color: #2C3E50;
-    background-color: #ECEFF1;
+    background-color: #D2F2D4
+    ;
     font-size: 16px;
     letter-spacing: 1px
 }
@@ -63,13 +64,13 @@ p {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    border: 1px solid #673AB7;
+    border: 1px solid #1C7C56;
     outline-width: 0
 }
 
 #msform .action-button {
     width: 100px;
-    background: #673AB7;
+    background: #1C7C56;
     font-weight: bold;
     color: white;
     border: 0 none;
@@ -82,7 +83,7 @@ p {
 
 #msform .action-button:hover,
 #msform .action-button:focus {
-    background-color: #311B92
+    background-color: hsl(156, 36%, 53%);
 }
 
 #msform .action-button-previous {
@@ -100,7 +101,7 @@ p {
 
 #msform .action-button-previous:hover,
 #msform .action-button-previous:focus {
-    background-color: #000000
+    background-color: #070707
 }
 
 .card {
@@ -111,14 +112,14 @@ p {
 
 .fs-title {
     font-size: 25px;
-    color: #673AB7;
+    color: #1C7C56;
     margin-bottom: 15px;
     font-weight: normal;
     text-align: left
 }
 
 .purple-text {
-    color: #673AB7;
+    color: #1C7C56;
     font-weight: normal
 }
 
@@ -130,8 +131,8 @@ p {
     text-align: right
 }
 
-.fieldlabels {
-    color: gray;
+.fieldlabels, .form-select{
+    color: #070707;
     text-align: left
 }
 
@@ -142,7 +143,7 @@ p {
 }
 
 #progressbar .active {
-    color: #673AB7
+    color: #1C7C56
 }
 
 #progressbar li {
@@ -200,7 +201,7 @@ p {
 
 #progressbar li.active:before,
 #progressbar li.active:after {
-    background: #673AB7
+    background: #1C7C56
 }
 
 .progress {
@@ -208,10 +209,12 @@ p {
 }
 
 .progress-bar {
-    background-color: #673AB7
+    background-color: #1C7C56
 }
 
 .fit-image {
     width: 100%;
     object-fit: cover
 }
+
+/* background-image: linear-gradient(45deg,rgba(0,128,0,1.0) 25%,#28a745 25%,#28a745 50%,rgba(0,128,0,1.0) 50%,#28a745 75%,#28a745 75%,#28a745); */
