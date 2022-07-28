@@ -164,9 +164,14 @@ p {
     content: "\f007"
 }
 
-#progressbar #payment:before {
+#progressbar #details:before {
     font-family: FontAwesome;
-    content: "\f030"
+    content: "\f129"
+}
+
+#progressbar #results:before {
+    font-family: FontAwesome;
+    content: "\f0f6"
 }
 
 #progressbar #confirm:before {
