@@ -39,6 +39,7 @@
                   role="progressbar"
                   aria-valuemin="0"
                   aria-valuemax="100"
+                  style="background-color: #1c7c56 !important"
                 ></div>
               </div>
               <br />
@@ -53,19 +54,23 @@
                       <h2 class="steps">Step 1 - 4</h2>
                     </div>
                   </div>
-                  <label class="fieldlabels">Email: </label>
-                  <input type="email" name="email" placeholder="" />
-                  <label class="fieldlabels">Username: </label>
-                  <input type="text" name="uname" placeholder="" />
-                  <label class="fieldlabels">Password: </label>
-                  <input type="password" name="pwd" placeholder="" />
-                  <label class="fieldlabels">Confirm Password: </label>
-                  <input type="password" name="cpwd" placeholder="" />
-                  <label class="fieldlabels">Jamb No.</label>
-                  <input type="text" name="" placeholder="" />
-                  <label class="fieldlabels">Jamb Score:</label>
-                  <input type="text" name="" placeholder="" />
-                  <label class="fieldlabels">Course Intended:</label>
+                  <label class="fieldlabels">Email:* </label>
+                  <input type="email" name="email" placeholder="Email" />
+                  <label class="fieldlabels">Username:* </label>
+                  <input type="text" name="uname" placeholder="Username" />
+                  <label class="fieldlabels">Password:* </label>
+                  <input type="password" name="pwd" placeholder="Password" />
+                  <label class="fieldlabels">Confirm Password:* </label>
+                  <input
+                    type="password"
+                    name="cpwd"
+                    placeholder="Confirm Password"
+                  />
+                  <label class="fieldlabels">Jamb No.*</label>
+                  <input type="text" name="" placeholder="Jamb No" />
+                  <label class="fieldlabels">Jamb Score:*</label>
+                  <input type="text" name="" placeholder="Jamb Score" />
+                  <label class="fieldlabels">Course Intended:*</label>
                   <input type="text" name="" placeholder="First Choice" />
                   <label class="fieldlabels"></label>
                   <input type="text" name="" placeholder="Second Choice" />
@@ -95,33 +100,49 @@
                       <h2 class="steps">Step 2 - 4</h2>
                     </div>
                   </div>
-                  <label class="fieldlabels">Surname: </label>
-                  <input type="text" name="fname" placeholder="" />
-                  <label class="fieldlabels">First Name: </label>
-                  <input type="text" name="fname" placeholder="" />
-                  <label class="fieldlabels">Other Names: </label>
-                  <input type="text" name="lname" placeholder="" />
-                  <label class="fieldlabels">Contact No:</label>
-                  <input type="text" name="phno" placeholder="" />
-                  <label class="fieldlabels">Alternate Contact No:</label>
-                  <input type="text" name="phno_2" placeholder="" />
-                  <label class="fieldlabels">Nationality: </label>
-                  <input type="text" name="fname" placeholder="" />
-                  <label class="fieldlabels">state:</label>
-                  <input type="text" name="lname" placeholder="" />
-                  <label class="fieldlabels">Contact Address: </label>
-                  <input type="text" name="phno" placeholder="" />
-                  <label class="fieldlabels">Date of Birth</label>
-                  <input type="text" name="dateofbirth" placeholder="" />
-                  <label class="fieldlabels">Place of Birth</label>
-                  <input type="text" name="placeofbirth" placeholder="" />
-                  <label class="fieldlabels">L.G.A</label>
-                  <input type="text" name="localgovt" placeholder="" />
+                  <label class="fieldlabels">Surname:* </label>
+                  <input type="text" name="fname" placeholder="Surname" />
+                  <label class="fieldlabels">First Name:* </label>
+                  <input type="text" name="fname" placeholder="Firstname" />
+                  <label class="fieldlabels">Other Names:* </label>
+                  <input type="text" name="lname" placeholder="othernames" />
+                  <label class="fieldlabels">Contact No:*</label>
+                  <input type="text" name="phno" placeholder="Contact No" />
+                  <label class="fieldlabels">Alternate Contact No:*</label>
+                  <input
+                    type="text"
+                    name="phno_2"
+                    placeholder="Alternate Contact No"
+                  />
+                  <label class="fieldlabels">Contact Address:*</label>
+                  <input
+                    type="text"
+                    name="phno_2"
+                    placeholder="Contact Address"
+                  />
+                  <label class="fieldlabels">Nationality:* </label>
+                  <input type="text" name="fname" placeholder="Nationality" />
+                  <label class="fieldlabels">State:*</label>
+                  <input type="text" name="lname" placeholder="State" />
+                  <label class="fieldlabels">Date of Birth:*</label>
+                  <input
+                    type="text"
+                    name="dateofbirth"
+                    placeholder="date of birth"
+                  />
+                  <label class="fieldlabels">Place of Birth:*</label>
+                  <input
+                    type="text"
+                    name="placeofbirth"
+                    placeholder="place of birth"
+                  />
+                  <label class="fieldlabels">L.G.A:*</label>
+                  <input type="text" name="localgovt" placeholder="L.G.A" />
                   <select
                     class="form-select form-select-lg col-lg-12"
                     aria-label=".form-select-lg example"
                   >
-                    <option selected>Gender</option>
+                    <option selected>Gender:*</option>
                     <option value="1">Male</option>
                     <option value="2">Female</option>
                     <option value="3">Others</option>
@@ -130,7 +151,7 @@
                     class="form-select form-select-lg col-lg-12"
                     aria-label=".form-select-lg example"
                   >
-                    <option selected>Marital Status</option>
+                    <option selected>Marital Status:*</option>
                     <option value="1">Single</option>
                     <option value="2">Married</option>
                   </select>
