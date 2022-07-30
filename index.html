@@ -24,25 +24,29 @@
         >
           <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
             <h2 id="heading">Federal College of Agriculture Ishiagu</h2>
-            <p>Main Campus, IVO L.G.A Ebonyi State</p>
+            <p class="location">Main Campus, IVO L.G.A Ebonyi State</p>
+            <div class="col-9">
+              <h2 class="fs-titleForm">Admission Form</h2>
+            </div>
             <form id="msform">
               <div class="row">
                 <div class="col-8">
                   <h2 class="fs-title-header">Requirements</h2>
                 </div>
               </div>
-              <strong><p class="requirement"></p></strong>
+              <p class="requirement">
                 (i) 8 Passport (ii) Local government identification (iii) Birth
                 Certificate or Declaration of age (iv) Secondary School
                 Testimonial (v) Statement of Result (vi) Online Printout Result
                 (O' Level) (vii) Recent Jamb Result (viii) ND Result and One
                 year IT Letter (HND Only)
               </p>
+              <p class="instruction">Enter the results of at least eight(8) O'Level subjects in the first sitting. If you must fill the second sitting, enter the results at least eight(8) O'Level subjects.</p>
 
               <!-- progressbar -->
               <ul id="progressbar">
-                <li class="active" id="account"><strong>Account</strong></li>
-                <li id="personal"><strong>Personal</strong></li>
+                <li class="active" id="account"><strong>Biodata</strong></li>
+                <li id="personal"><strong>Educational Background</strong></li>
                 <li id="details"><strong>Other Details</strong></li>
                 <li id="results"><strong>Results</strong></li>
                 <li id="confirm"><strong>Finish</strong></li>
@@ -62,40 +66,76 @@
                 <div class="form-card">
                   <div class="row">
                     <div class="col-7">
-                      <h2 class="fs-title">Admission Form:</h2>
+                      <h2 class="fs-title">BIODATA</h2>
                     </div>
                     <div class="col-5">
                       <h2 class="steps">Step 1 - 5</h2>
                     </div>
                   </div>
-                  <label class="fieldlabels">Email:* </label>
-                  <input type="email" name="email" placeholder="Email" />
-                  <label class="fieldlabels">Username:* </label>
-                  <input type="text" name="uname" placeholder="Username" />
-                  <label class="fieldlabels">Password:* </label>
-                  <input type="password" name="pwd" placeholder="Password" />
-                  <label class="fieldlabels">Confirm Password:* </label>
-                  <input
-                    type="password"
-                    name="cpwd"
-                    placeholder="Confirm Password"
-                  />
-                  <label class="fieldlabels">Jamb No.*</label>
-                  <input type="text" name="" placeholder="Jamb No" />
-                  <label class="fieldlabels">Jamb Score:*</label>
-                  <input type="text" name="" placeholder="Jamb Score" />
-                  <label class="fieldlabels">Course Intended:*</label>
-                  <input type="text" name="" placeholder="First Choice" />
-                  <label class="fieldlabels"></label>
-                  <input type="text" name="" placeholder="Second Choice" />
-                  <select
-                    class="form-select form-select-lg col-lg-12"
-                    aria-label=".form-select-lg example"
-                  >
-                    <option selected>Select Programme</option>
-                    <option value="1">ND</option>
-                    <option value="2">HND</option>
-                  </select>
+                  <label class="fieldlabels">Surname</label>
+                  <input type="text" name="sname" placeholder="Surname" required>                                    
+                  <div class="row">
+                    <div class="col-6">
+                      <label class="fieldlabels">First Name</label>
+                      <input type="text" name="fname" placeholder="First Name" required>
+                    </div>
+                    <div class="col-6">
+                      <label class="fieldlabels">Other Names</label>
+                      <input type="text" name="oname" placeholder="Other Names" required>
+                    </div>
+                  </div>
+                  <label class="fieldlabels">Nationality</label>
+                  <input type="text" name="nationality" placeholder="Nationality" required>                                    
+                  <div class="row">
+                    <div class="col-6">
+                      <label class="fieldlabels">State</label>
+                      <input type="text" name="state" placeholder="State" required>
+                    </div>
+                    <div class="col-6">
+                      <label class="fieldlabels">LGA</label>
+                      <input type="text" name="lga" placeholder="LGA" required>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <label class="fieldlabels">Gender</label>
+                      <select class="form-select" id="gender" aria-label="gender" required>
+                        <option value="Select Gender" disabled selected>Select Gender</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                      </select>
+                    </div>                    
+                    <div class="col-6">
+                      <label class="fieldlabels">Date of Birth</label>
+                      <input type="date" name="birthDate" required/>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <label class="fieldlabels">Place of Birth</label>
+                      <input type="text" name="birthPlace" placeholder="Place of Birth" required>
+                    </div>
+                    <div class="col-6">
+                      <label class="fieldlabels">Marital Status</label>
+                      <select class="form-select" id="maritalStatus" aria-label="maritalStatus" required>
+                        <option value="Select" disabled selected>Select</option>
+                        <option value="1">Single</option>
+                        <option value="2">Married</option>
+                      </select>
+                    </div>
+                  </div>
+                  <label class="fieldlabels">Contact Address</label>
+                  <input type="text" name="address" placeholder="Contact Address" required>
+                  <div class="row">
+                    <div class="col-6">
+                      <label class="fieldlabels">Email</label>
+                      <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="col-6">
+                      <label class="fieldlabels">Phone Number</label>
+                      <input type="text" name="pnumber" placeholder="Phone Number" required>
+                    </div>
+                  </div>                
                 </div>
                 <input
                   type="button"
@@ -104,71 +144,160 @@
                   value="Next"
                 />
               </fieldset>
+
               <fieldset>
                 <div class="form-card">
                   <div class="row">
                     <div class="col-7">
-                      <h2 class="fs-title">Personal Information:</h2>
+                      <h2 class="fs-title">EDUCATIONAL BACKGROUND</h2>
                     </div>
                     <div class="col-5">
                       <h2 class="steps">Step 2 - 5</h2>
                     </div>
                   </div>
-                  <label class="fieldlabels">Surname:* </label>
-                  <input type="text" name="fname" placeholder="Surname" />
-                  <label class="fieldlabels">First Name:* </label>
-                  <input type="text" name="fname" placeholder="Firstname" />
-                  <label class="fieldlabels">Other Names:* </label>
-                  <input type="text" name="lname" placeholder="othernames" />
-                  <label class="fieldlabels">Contact No:*</label>
-                  <input type="text" name="phno" placeholder="Contact No" />
-                  <label class="fieldlabels">Alternate Contact No:*</label>
-                  <input
-                    type="text"
-                    name="phno_2"
-                    placeholder="Alternate Contact No"
-                  />
-                  <label class="fieldlabels">Contact Address:*</label>
-                  <input
-                    type="text"
-                    name="phno_2"
-                    placeholder="Contact Address"
-                  />
-                  <label class="fieldlabels">Nationality:* </label>
-                  <input type="text" name="fname" placeholder="Nationality" />
-                  <label class="fieldlabels">State:*</label>
-                  <input type="text" name="lname" placeholder="State" />
-                  <label class="fieldlabels">Date of Birth:*</label>
-                  <input
-                    type="text"
-                    name="dateofbirth"
-                    placeholder="date of birth"
-                  />
-                  <label class="fieldlabels">Place of Birth:*</label>
-                  <input
-                    type="text"
-                    name="placeofbirth"
-                    placeholder="place of birth"
-                  />
-                  <label class="fieldlabels">L.G.A:*</label>
-                  <input type="text" name="localgovt" placeholder="L.G.A" />
-                  <select
-                    class="form-select form-select-lg col-lg-12"
-                    aria-label=".form-select-lg example"
-                  >
-                    <option selected>Gender:*</option>
-                    <option value="1">Male</option>
-                    <option value="2">Female</option>
-                    <option value="3">Others</option>
-                  </select>
-                  <select
-                    class="form-select form-select-lg col-lg-12"
-                    aria-label=".form-select-lg example"
-                  >
-                    <option selected>Marital Status:*</option>
-                    <option value="1">Single</option>
-                    <option value="2">Married</option>
-                  </select>
+                  <div class="row">
+                    <div class="col-6">
+                      <label class="fieldlabels" for="dropdown">Primary (From)</label>
+                      <select class="form-select form-select-lg col-lg-12"
+                      aria-label=".form-select-lg example" id="dropdown">
+                        <option value="Select Year" disabled selected value>Select Year</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                      </select>
+                    </div>
+                    <div class="col-6">
+                      <label class="fieldlabels" for="dropdown">Primary (To)</label>
+                      <select class="form-select form-select-lg col-lg-12"
+                      aria-label=".form-select-lg example" id="dropdown">
+                        <option value="Select Year" disabled selected value>Select Year</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                      </select>
+                    </div>                   
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <label class="fieldlabels" for="dropdown">Secondary (From)</label>
+                      <select class="form-select form-select-lg col-lg-12"
+                      aria-label=".form-select-lg example" id="dropdown">
+                        <option value="Select Year" disabled selected value>Select Year</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                      </select>
+                    </div>
+                    <div class="col-6">
+                      <label class="fieldlabels" for="dropdown">Secondary (To)</label>
+                      <select class="form-select form-select-lg col-lg-12"
+                      aria-label=".form-select-lg example" id="dropdown">
+                        <option value="Select Year" disabled selected value>Select Year</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                      </select>
+                    </div>                   
+                  </div>
+                  <div>
+                    <label class="fieldlabels" for="dropdown">Programme</label>
+                    <select class="form-select form-select-lg col-lg-12"
+                    aria-label=".form-select-lg example" id="dropdown">
+                      <option value="Select Year" disabled selected value>Select Programme</option>
+                      <option value="ND">ND</option>
+                      <option value="HND">HND</option>
+                    </select>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <label class="fieldlabels">Course Intended (First Choice)</label>
+                      <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Subject" disabled selected value>Select First Choice</option>
+                            <option value="Course 1">Course 1</option>
+                            <option value="Course 2">Course 2</option>
+                            <option value="Course 3">Course 3</option>
+                          </select>
+                    </div>
+                    <div class="col-6">
+                      <label class="fieldlabels">Course Intended (Second Choice)</label>
+                      <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Subject" disabled selected value>Select Second Choice</option>
+                            <option value="Course 1">Course 1</option>
+                            <option value="Course 2">Course 2</option>
+                            <option value="Course 3">Course 3</option>
+                          </select>
+                    </div>
+                  </div> 
+                  <div class="row">
+                    <div class="col-6">
+                      <label class="fieldlabels">JAMB No</label>
+                      <input type="text" name="jambNo" placeholder="Enter your JAMB No" required>
+                    </div>
+                    <div class="col-6">
+                      <label class="fieldlabels">JAMB Score</label>
+                      <input type="number" name="jambScore" placeholder="Enter your JAMB Score" required>
+                    </div>
+                  </div>
                 </div>
                 <input
                   type="button"
@@ -183,32 +312,29 @@
                   value="Previous"
                 />
               </fieldset>
+
               <fieldset>
                 <div class="form-card">
                   <div class="row">
                     <div class="col-7">
-                      <h2 class="fs-title">Other Details</h2>
+                      <h2 class="fs-title">OTHER DETAILS</h2>
                     </div>
                     <div class="col-5">
                       <h2 class="steps">Step 3 - 5</h2>
                     </div>
                   </div>
-                  <label class="fieldlabels">Name of Sponsor: *</label>
-                  <input
-                    type="text"
-                    name="fname"
-                    placeholder="Name of Sponsor"
-                  />
-                  <label class="fieldlabels">Address: *</label>
-                  <input type="text" name="fname" placeholder="Address" />
-                  <label class="fieldlabels">Phone No: *</label>
-                  <input type="text" name="fname" placeholder="Phone No" />
-                  <label class="fieldlabels">Next of Kin: *</label>
-                  <input type="text" name="fname" placeholder="Next of Kin" />
-                  <label class="fieldlabels">Address: *</label>
-                  <input type="text" name="fname" placeholder="Address" />
-                  <label class="fieldlabels">Phone No: *</label>
-                  <input type="text" name="fname" placeholder="Phone No" />
+                  <label class="fieldlabels">Name of Sponsor</label>
+                  <input type="text" name="sponsorName" placeholder="Name of Sponsor" required>
+                  <label class="fieldlabels">Address</label>
+                  <input type="text" name="sponsorAddress" placeholder="Address" required>
+                  <label class="fieldlabels">Phone No</label>
+                  <input type="text" name="sponsorNumber" placeholder="Phone No" required>
+                  <label class="fieldlabels">Next of Kin</label>
+                  <input type="text" name="kin" placeholder="Next of Kin" required>
+                  <label class="fieldlabels">Address</label>
+                  <input type="text" name="kinAddress" placeholder="Address" required>
+                  <label class="fieldlabels">Phone No</label>
+                  <input type="text" name="kinNumber" placeholder="Phone No" required>
                 </div>
                 <input
                   type="button"
@@ -223,311 +349,627 @@
                   value="Previous"
                 />
               </fieldset>
+
               <fieldset>
                 <div class="form-card">
                   <div class="row">
                     <div class="col-7">
-                      <h2 class="fs-title">Results</h2>
+                      <h2 class="fs-title">RESULTS</h2>
                     </div>
                     <div class="col-5">
                       <h2 class="steps">Step 4 - 5</h2>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-4">
-                      <label for="formFileDisabled" class="form-label"
-                        >SUBJECTS</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="ENGLISH"
-                        aria-label="ENGLISH"
-                        disabled
-                      />
-                    </div>
                     <div class="col">
-                      <label for="formFileDisabled" class="form-label"
-                        >WAEC</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                    <div class="col">
-                      <label for="formFileDisabled" class="form-label"
-                        >NECO</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                    <div class="col">
-                      <label for="formFileDisabled" class="form-label"
-                        >NABTEB</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
+                      <h2 class="fs-title result-title">O' Level Result</h2>
                     </div>
                   </div>
-
-                  <div class="row" style="margin-top: 5px">
-                    <div class="col-4">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="MATHEMATICS"
-                        aria-label="MATHEMATICS"
-                        disabled
-                      />
+                  <div class="row">
+                    <div class="col-6">
+                      <h3 class="fs-title result-subtitle">First Attempt</h3>
+                      <label class="fieldlabels" for="dropdown">Examination Name</label>
+                      <select class="form-select form-select-lg col-lg-12"
+                      aria-label=".form-select-lg example" id="dropdown">
+                        <option value="Select Examination" disabled selected>Select Examination</option>
+                        <option value="WAEC">WAEC</option>
+                        <option value="NECO">NECO</option>
+                        <option value="NABTEB">NABTEB</option>
+                      </select>
+                      <label class="fieldlabels" for="dropdown">Examination Year</label>
+                      <select class="form-select form-select-lg col-lg-12"
+                      aria-label=".form-select-lg example" id="dropdown">
+                        <option value="Select Year" disabled selected>Select Year</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                      </select>
+                      <label class="fieldlabels" for="examNo" id="name-label">Examination No</label>
+                      <input id="examNo" type="text" required placeholder="Enter first sitting exam no">
                     </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="row" style="margin-top: 5px">
-                    <div class="col-4">
-                      <input type="text" class="form-control" />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
+                    <div class="col-6">
+                      <h3 class="fs-title result-subtitle">Second Attempt</h3>
+                      <label class="fieldlabels" for="dropdown">Examination Name</label>
+                      <select class="form-select form-select-lg col-lg-12"
+                      aria-label=".form-select-lg example" id="dropdown">
+                        <option value="Select Examination" disabled selected>Select Examination</option>
+                        <option value="WAEC">WAEC</option>
+                        <option value="NECO">NECO</option>
+                        <option value="NABTEB">NABTEB</option>
+                      </select>
+                      <label class="fieldlabels" for="dropdown">Examination Year</label>
+                      <select class="form-select form-select-lg col-lg-12"
+                      aria-label=".form-select-lg example" id="dropdown">
+                        <option value="Select Year" disabled selected>Select Year</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                      </select>
+                      <label class="fieldlabels" for="examNo id="name-label">Examination No</label>
+                      <input id="examNo" type="text" required placeholder="Enter second sitting exam no">
                     </div>
                   </div>
+                  
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-8">
+                          <label for="formFileDisabled" class="form-label text"
+                            >SUBJECTS</label
+                          >
+                        </div>
+                        <div class="col-4">
+                          <label for="formFileDisabled" class="form-label text"
+                            >1st Att</label
+                          >
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="form-select-lg col-8">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="ENGLISH"
+                            aria-label="ENGLISH"
+                            disabled
+                          />
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Grade" disabled selected></option>
+                            <option value="A1">A1</option>
+                            <option value="B2">B2</option>
+                            <option value="B3">B3</option>
+                            <option value="C4">C4</option>
+                            <option value="C5">C5</option>
+                            <option value="C6">C6</option>
+                            <option value="D7">D7</option>
+                            <option value="E8">E8</option>
+                            <option value="F9">F9</option>
+                          </select>
+                        </div>
+                      </div>
+                      
+                      <div class="row">
+                        <div class="form-select-lg col-8">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="MATHEMATICS"
+                            aria-label="MATHEMATICS"
+                            disabled
+                          />
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Grade" disabled selected></option>
+                            <option value="A1">A1</option>
+                            <option value="B2">B2</option>
+                            <option value="B3">B3</option>
+                            <option value="C4">C4</option>
+                            <option value="C5">C5</option>
+                            <option value="C6">C6</option>
+                            <option value="D7">D7</option>
+                            <option value="E8">E8</option>
+                            <option value="F9">F9</option>
+                          </select>
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-8">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Subject" disabled selected>Select Subject</option>
+                            <option value="Sub 1">Sub 1</option>
+                            <option value="Sub 2">Sub 2</option>
+                            <option value="Sub 3">Sub 3</option>
+                          </select>
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Grade" disabled selected></option>
+                            <option value="A1">A1</option>
+                            <option value="B2">B2</option>
+                            <option value="B3">B3</option>
+                            <option value="C4">C4</option>
+                            <option value="C5">C5</option>
+                            <option value="C6">C6</option>
+                            <option value="D7">D7</option>
+                            <option value="E8">E8</option>
+                            <option value="F9">F9</option>
+                          </select>
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-8">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Subject" disabled selected>Select Subject</option>
+                            <option value="Sub 1">Sub 1</option>
+                            <option value="Sub 2">Sub 2</option>
+                            <option value="Sub 3">Sub 3</option>
+                          </select>
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Grade" disabled selected></option>
+                            <option value="A1">A1</option>
+                            <option value="B2">B2</option>
+                            <option value="B3">B3</option>
+                            <option value="C4">C4</option>
+                            <option value="C5">C5</option>
+                            <option value="C6">C6</option>
+                            <option value="D7">D7</option>
+                            <option value="E8">E8</option>
+                            <option value="F9">F9</option>
+                          </select>
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-8">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Subject" disabled selected>Select Subject</option>
+                            <option value="Sub 1">Sub 1</option>
+                            <option value="Sub 2">Sub 2</option>
+                            <option value="Sub 3">Sub 3</option>
+                          </select>
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Grade" disabled selected></option>
+                            <option value="A1">A1</option>
+                            <option value="B2">B2</option>
+                            <option value="B3">B3</option>
+                            <option value="C4">C4</option>
+                            <option value="C5">C5</option>
+                            <option value="C6">C6</option>
+                            <option value="D7">D7</option>
+                            <option value="E8">E8</option>
+                            <option value="F9">F9</option>
+                          </select>
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-8">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Subject" disabled selected>Select Subject</option>
+                            <option value="Sub 1">Sub 1</option>
+                            <option value="Sub 2">Sub 2</option>
+                            <option value="Sub 3">Sub 3</option>
+                          </select>
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Grade" disabled selected></option>
+                            <option value="A1">A1</option>
+                            <option value="B2">B2</option>
+                            <option value="B3">B3</option>
+                            <option value="C4">C4</option>
+                            <option value="C5">C5</option>
+                            <option value="C6">C6</option>
+                            <option value="D7">D7</option>
+                            <option value="E8">E8</option>
+                            <option value="F9">F9</option>
+                          </select>
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-8">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Subject" disabled selected>Select Subject</option>
+                            <option value="Sub 1">Sub 1</option>
+                            <option value="Sub 2">Sub 2</option>
+                            <option value="Sub 3">Sub 3</option>
+                          </select>
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Grade" disabled selected></option>
+                            <option value="A1">A1</option>
+                            <option value="B2">B2</option>
+                            <option value="B3">B3</option>
+                            <option value="C4">C4</option>
+                            <option value="C5">C5</option>
+                            <option value="C6">C6</option>
+                            <option value="D7">D7</option>
+                            <option value="E8">E8</option>
+                            <option value="F9">F9</option>
+                          </select>
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-8">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Subject" disabled selected>Select Subject</option>
+                            <option value="Sub 1">Sub 1</option>
+                            <option value="Sub 2">Sub 2</option>
+                            <option value="Sub 3">Sub 3</option>
+                          </select>
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Grade" disabled selected></option>
+                            <option value="A1">A1</option>
+                            <option value="B2">B2</option>
+                            <option value="B3">B3</option>
+                            <option value="C4">C4</option>
+                            <option value="C5">C5</option>
+                            <option value="C6">C6</option>
+                            <option value="D7">D7</option>
+                            <option value="E8">E8</option>
+                            <option value="F9">F9</option>
+                          </select>
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-8">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Subject" disabled selected>Select Subject</option>
+                            <option value="Sub 1">Sub 1</option>
+                            <option value="Sub 2">Sub 2</option>
+                            <option value="Sub 3">Sub 3</option>
+                          </select>
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Grade" disabled selected></option>
+                            <option value="A1">A1</option>
+                            <option value="B2">B2</option>
+                            <option value="B3">B3</option>
+                            <option value="C4">C4</option>
+                            <option value="C5">C5</option>
+                            <option value="C6">C6</option>
+                            <option value="D7">D7</option>
+                            <option value="E8">E8</option>
+                            <option value="F9">F9</option>
+                          </select>
+                        </div>
+                      </div>                  
+                    </div>
 
-                  <div class="row" style="margin-top: 5px">
-                    <div class="col-4">
-                      <input type="text" class="form-control" />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="row" style="margin-top: 5px">
-                    <div class="col-4">
-                      <input type="text" class="form-control" />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="row" style="margin-top: 5px">
-                    <div class="col-4">
-                      <input type="text" class="form-control" />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="row" style="margin-top: 5px">
-                    <div class="col-4">
-                      <input type="text" class="form-control" />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="row" style="margin-top: 5px">
-                    <div class="col-4">
-                      <input type="text" class="form-control" />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="row" style="margin-top: 5px">
-                    <div class="col-4">
-                      <input type="text" class="form-control" />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
-                    </div>
-                    <div class="col">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Grade"
-                        aria-label="Grade"
-                      />
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-8">
+                          <label for="formFileDisabled" class="form-label text"
+                            >SUBJECTS</label
+                          >
+                        </div>
+                        <div class="col-4">
+                          <label for="formFileDisabled" class="form-label text"
+                            >2nd Att</label
+                          >
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="form-select-lg col-8">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="ENGLISH"
+                            aria-label="ENGLISH"
+                            disabled
+                          />
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Grade" disabled selected></option>
+                            <option value="A1">A1</option>
+                            <option value="B2">B2</option>
+                            <option value="B3">B3</option>
+                            <option value="C4">C4</option>
+                            <option value="C5">C5</option>
+                            <option value="C6">C6</option>
+                            <option value="D7">D7</option>
+                            <option value="E8">E8</option>
+                            <option value="F9">F9</option>
+                          </select>
+                        </div>
+                      </div>
+                      
+                      <div class="row">
+                        <div class="form-select-lg col-8">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="MATHEMATICS"
+                            aria-label="MATHEMATICS"
+                            disabled
+                          />
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Grade" disabled selected></option>
+                            <option value="A1">A1</option>
+                            <option value="B2">B2</option>
+                            <option value="B3">B3</option>
+                            <option value="C4">C4</option>
+                            <option value="C5">C5</option>
+                            <option value="C6">C6</option>
+                            <option value="D7">D7</option>
+                            <option value="E8">E8</option>
+                            <option value="F9">F9</option>
+                          </select>
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-8">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Subject" disabled selected>Select Subject</option>
+                            <option value="Sub 1">Sub 1</option>
+                            <option value="Sub 2">Sub 2</option>
+                            <option value="Sub 3">Sub 3</option>
+                          </select>
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Grade" disabled selected></option>
+                            <option value="A1">A1</option>
+                            <option value="B2">B2</option>
+                            <option value="B3">B3</option>
+                            <option value="C4">C4</option>
+                            <option value="C5">C5</option>
+                            <option value="C6">C6</option>
+                            <option value="D7">D7</option>
+                            <option value="E8">E8</option>
+                            <option value="F9">F9</option>
+                          </select>
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-8">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Subject" disabled selected>Select Subject</option>
+                            <option value="Sub 1">Sub 1</option>
+                            <option value="Sub 2">Sub 2</option>
+                            <option value="Sub 3">Sub 3</option>
+                          </select>
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Grade" disabled selected></option>
+                            <option value="A1">A1</option>
+                            <option value="B2">B2</option>
+                            <option value="B3">B3</option>
+                            <option value="C4">C4</option>
+                            <option value="C5">C5</option>
+                            <option value="C6">C6</option>
+                            <option value="D7">D7</option>
+                            <option value="E8">E8</option>
+                            <option value="F9">F9</option>
+                          </select>
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-8">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Subject" disabled selected>Select Subject</option>
+                            <option value="Sub 1">Sub 1</option>
+                            <option value="Sub 2">Sub 2</option>
+                            <option value="Sub 3">Sub 3</option>
+                          </select>
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Grade" disabled selected></option>
+                            <option value="A1">A1</option>
+                            <option value="B2">B2</option>
+                            <option value="B3">B3</option>
+                            <option value="C4">C4</option>
+                            <option value="C5">C5</option>
+                            <option value="C6">C6</option>
+                            <option value="D7">D7</option>
+                            <option value="E8">E8</option>
+                            <option value="F9">F9</option>
+                          </select>
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-8">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Subject" disabled selected>Select Subject</option>
+                            <option value="Sub 1">Sub 1</option>
+                            <option value="Sub 2">Sub 2</option>
+                            <option value="Sub 3">Sub 3</option>
+                          </select>
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Grade" disabled selected></option>
+                            <option value="A1">A1</option>
+                            <option value="B2">B2</option>
+                            <option value="B3">B3</option>
+                            <option value="C4">C4</option>
+                            <option value="C5">C5</option>
+                            <option value="C6">C6</option>
+                            <option value="D7">D7</option>
+                            <option value="E8">E8</option>
+                            <option value="F9">F9</option>
+                          </select>
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-8">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Subject" disabled selected>Select Subject</option>
+                            <option value="Sub 1">Sub 1</option>
+                            <option value="Sub 2">Sub 2</option>
+                            <option value="Sub 3">Sub 3</option>
+                          </select>
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Grade" disabled selected></option>
+                            <option value="A1">A1</option>
+                            <option value="B2">B2</option>
+                            <option value="B3">B3</option>
+                            <option value="C4">C4</option>
+                            <option value="C5">C5</option>
+                            <option value="C6">C6</option>
+                            <option value="D7">D7</option>
+                            <option value="E8">E8</option>
+                            <option value="F9">F9</option>
+                          </select>
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-8">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Subject" disabled selected>Select Subject</option>
+                            <option value="Sub 1">Sub 1</option>
+                            <option value="Sub 2">Sub 2</option>
+                            <option value="Sub 3">Sub 3</option>
+                          </select>
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Grade" disabled selected></option>
+                            <option value="A1">A1</option>
+                            <option value="B2">B2</option>
+                            <option value="B3">B3</option>
+                            <option value="C4">C4</option>
+                            <option value="C5">C5</option>
+                            <option value="C6">C6</option>
+                            <option value="D7">D7</option>
+                            <option value="E8">E8</option>
+                            <option value="F9">F9</option>
+                          </select>
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-8">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg col-lg-12"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Subject" disabled selected>Select Subject</option>
+                            <option value="Sub 1">Sub 1</option>
+                            <option value="Sub 2">Sub 2</option>
+                            <option value="Sub 3">Sub 3</option>
+                          </select>
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels" for="dropdown"></label>
+                          <select class="form-select form-select-lg"
+                          aria-label=".form-select-lg example" id="dropdown">
+                            <option value="Select Grade" disabled selected></option>
+                            <option value="A1">A1</option>
+                            <option value="B2">B2</option>
+                            <option value="B3">B3</option>
+                            <option value="C4">C4</option>
+                            <option value="C5">C5</option>
+                            <option value="C6">C6</option>
+                            <option value="D7">D7</option>
+                            <option value="E8">E8</option>
+                            <option value="F9">F9</option>
+                          </select>
+                        </div>
+                      </div>                  
                     </div>
                   </div>
                 </div>
-
                 <input
                   type="button"
                   name="next"
@@ -541,6 +983,7 @@
                   value="Previous"
                 />
               </fieldset>
+
               <fieldset>
                 <div class="form-card">
                   <div class="row">
@@ -572,14 +1015,16 @@
                       </h5>
                     </div>
                   </div>
-                  <input
+                </div>
+                <input
                   type="button"
                   name="next"
                   class="next action-button"
                   value="Home"
                 />
-                </div>
               </fieldset>
+
+              <p class="instruction">Ensure you submit and print this application upon completion. In your best interest, ensure you provide us with accurate information, and that you are adequately informed about the course you are applying for and what you would be commiting to if you get accepted as a student. </p>
             </form>
           </div>
         </div>
