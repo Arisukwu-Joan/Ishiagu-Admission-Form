@@ -18,7 +18,7 @@ label {
 #heading {
   text-transform: uppercase;
   color: #1c7c56;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 #msform {
@@ -27,11 +27,12 @@ label {
   margin-top: 20px;
 }
 
+.location,
 .requirement,
 .instruction {
   text-align: center;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 #msform fieldset {
@@ -130,18 +131,18 @@ label {
 }
 
 .result-title {
-  font-size: 24px;
+  font-size: 23px;
 }
 
 .result-subtitle {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .fs-titleForm {
   display: flex;
   justify-content: end;
   align-items: flex-end;
-  font-size: 30px;
+  font-size: 25px;
   color: #1c7c56;
   text-transform: uppercase;
 }
@@ -150,7 +151,7 @@ label {
   display: flex;
   justify-content: end;
   align-items: flex-end;
-  font-size: 30px;
+  font-size: 25px;
   color: #1c7c56;
 }
 
@@ -172,6 +173,10 @@ label {
   color: #808080;
   text-align: left;
   /* font-family:  -apple-system, BlinkMacSystemFont; */
+}
+
+.text {
+  color: #808080;
 }
 
 #progressbar {
