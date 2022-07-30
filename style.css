@@ -168,11 +168,6 @@ label {
   text-align: right;
 }
 
-<<<<<<< HEAD
-.fieldlabels, .form-select{
-    color: #808080;
-    text-align: left
-=======
 .fieldlabels,
 .form-select {
   color: #808080;
@@ -182,7 +177,6 @@ label {
 
 .text {
   color: #808080;
->>>>>>> 3d84286239211cb333d115e6b26d2367269fa557
 }
 
 #progressbar {
